@@ -4,6 +4,4 @@ public class MonthlyReportLine {
     int quantity;
     int sumOfOne;
     int cost;
-    public MonthlyReportLine() {
-    }
 }

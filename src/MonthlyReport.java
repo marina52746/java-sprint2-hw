@@ -17,9 +17,6 @@ public class MonthlyReport {
         year = Year;
         month = Month;
     }
-
-    //public int minIncome = 0;
-    //public int minExpense = 0;
     public int maxIncomeSum = 0;
     public String maxIncomeGoods;
     public int maxExpenseSum = 0;
@@ -29,29 +26,6 @@ public class MonthlyReport {
     public int avgIncome = 0;
     public int avgExpense = 0;
 
-    /* public void minAmount() {
-        if (!lines.isEmpty()) {
-            if (lines.get(0).isExpense) {
-                minExpense = lines.get(0).cost;
-            }
-            else {
-                minIncome = lines.get(0).cost;
-            }
-        }
-        for (MonthlyReportLine line : lines) {
-            if (line.isExpense) {
-                if (line.cost < minExpense) {
-                    minExpense = line.cost;
-                }
-            }
-            else {
-                if (line.cost < minIncome) {
-                    minIncome = line.cost;
-                }
-            }
-
-        }
-    } */
     public void maxAmount() {
         for (MonthlyReportLine line : lines) {
             if (line.isExpense) {

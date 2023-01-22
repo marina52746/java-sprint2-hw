@@ -9,52 +9,10 @@ public class YearlyReport {
     }
 
     public int year;
-    //public int minIncome = 0;
-    //public int minExpense = 0;
-    //public int maxIncome = 0;
-    //public int maxExpense = 0;
     public int sumIncome = 0;
     public int sumExpense = 0;
     public int avgIncome = 0;
     public int avgExpense = 0;
-
-    /* public void minAmount() {
-        if (!lines.isEmpty()) {
-            if (lines.get(0).isExpense) {
-                minExpense = lines.get(0).amount;
-            }
-            else {
-                minIncome = lines.get(0).amount;
-            }
-        }
-        for (YearlyReportLine line : lines) {
-            if (line.isExpense) {
-                if (line.amount < minExpense) {
-                    minExpense = line.amount;
-                }
-            }
-            else {
-                if (line.amount < minIncome) {
-                    minIncome = line.amount;
-                }
-            }
-
-        }
-    } */
-    /* public void maxAmount() {
-        for (YearlyReportLine line : lines) {
-            if (line.isExpense) {
-                if (line.amount > maxExpense) {
-                    maxExpense = line.amount;
-                }
-            }
-            else {
-                if (line.amount > maxIncome) {
-                    maxIncome = line.amount;
-                }
-            }
-        }
-    } */
 
     public void getSumAll() {
         for (YearlyReportLine line : lines) {
@@ -66,7 +24,6 @@ public class YearlyReport {
             }
         }
     }
-
 
     public void averageAmount() {
         if (lines.size() != 0) {
